@@ -1,0 +1,194 @@
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: "Helvetica Neue LT Std 77 Bold Condensed";
+  src: url("https://db.onlinewebfonts.com/t/4c29fcc86f895611c127f96e745d6dd4.eot");
+  src: url("https://db.onlinewebfonts.com/t/4c29fcc86f895611c127f96e745d6dd4.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/4c29fcc86f895611c127f96e745d6dd4.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/4c29fcc86f895611c127f96e745d6dd4.woff") format("woff"), url("https://db.onlinewebfonts.com/t/4c29fcc86f895611c127f96e745d6dd4.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/4c29fcc86f895611c127f96e745d6dd4.svg#Helvetica Neue LT Std 77 Bold Condensed") format("svg");
+}
+
+@font-face {
+  font-family: "Helvetica Neue LT Std 55 Roman";
+  src: url("https://db.onlinewebfonts.com/t/f0db0faa0f4af4630e2db0cd30400f2c.eot");
+  src: url("https://db.onlinewebfonts.com/t/f0db0faa0f4af4630e2db0cd30400f2c.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/f0db0faa0f4af4630e2db0cd30400f2c.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/f0db0faa0f4af4630e2db0cd30400f2c.woff") format("woff"), url("https://db.onlinewebfonts.com/t/f0db0faa0f4af4630e2db0cd30400f2c.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/f0db0faa0f4af4630e2db0cd30400f2c.svg#Helvetica Neue LT Std 55 Roman") format("svg");
+}
+
+/*************MOBILE FIRST!!!**************/
+
+/**Styling af logo + header**/
+body {
+  background-color: #f5f5f5;
+}
+.logo_header {
+  display: flex;
+  gap: 2%;
+}
+.logo_header img {
+  width: 80px;
+  height: 80px;
+}
+svg {
+  scale: 0.8;
+}
+
+h1 {
+  font-family: "Helvetica Neue LT Std 77 Bold Condensed";
+  color: #233249;
+  font-size: 30pt;
+}
+
+h2 {
+  font-family: "Helvetica Neue LT Std 77 Bold Condensed";
+  font-size: 14pt;
+  color: #233249;
+  text-transform: uppercase;
+}
+
+main {
+  margin: 3%;
+}
+
+.display_none_mobile {
+  display: none;
+}
+.produkt_container_flex p {
+  display: flex;
+  justify-content: space-between; /* Distribute space between text and span */
+  align-items: center; /* Align text vertically in the center */
+  margin: 0; /* Remove any default margins for better alignment */
+  padding: 5px 0; /* Add some vertical padding for spacing between lines */
+}
+
+.produkt_container_flex span {
+  margin-right: 5%;
+}
+
+.produkt_container {
+  margin-top: 3%;
+  padding: 5%;
+  background-color: #d9d9d9;
+}
+.produkt_container h3 {
+  color: #233249;
+  font-size: 14pt;
+  margin-left: 5%;
+  font-family: "Helvetica Neue LT Std 77 Bold Condensed";
+}
+.produkt_container p {
+  margin-left: 5%;
+  font-size: 10pt;
+  font-family: "Helvetica Neue LT Std 55 Roman";
+  color: #233249;
+}
+
+.ledig_button {
+  color: #233249;
+  text-transform: uppercase;
+  font-family: "Helvetica Neue LT Std 77 Bold Condensed";
+  font-size: 12pt;
+  background-color: #da87a8;
+  padding: 2%;
+  width: 25ch;
+  border: none;
+  margin-top: 3%;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.ledig_button:hover {
+  background-color: #233249;
+  color: #da87a8;
+}
+
+.guide_grid h3 {
+  color: #233249;
+  font-family: "Helvetica Neue LT Std 77 Bold Condensed";
+  font-size: 90pt;
+  margin: 0;
+}
+
+.guide_grid p {
+  max-width: 55ch;
+  color: #233249;
+  font-family: "Helvetica Neue LT Std 55 Roman";
+  font-size: 10pt;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.guide_item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.guide_item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/************* DESKTOP **************/
+
+@media (min-width: 800px) {
+  .logo_header img {
+    width: 120px;
+    height: 120px;
+  }
+  svg {
+    scale: 1;
+  }
+
+  h1 {
+    font-size: 40pt;
+  }
+
+  h2 {
+    font-size: 30pt;
+  }
+
+  /* .display_none_mobile {
+    display: block;
+  }
+
+  .grid_singleview {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    gap: 2%;
+  } */
+
+  .grid_singleview {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    gap: 2%;
+  }
+
+  .grid_singleview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .display_none_mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+  }
+
+  .produkt_container {
+    margin-top: 0;
+    margin-right: 15%;
+  }
+
+  .produkt_container h3 {
+    font-size: 20pt;
+  }
+  .produkt_container p {
+    font-size: 10pt;
+  }
+
+  .guide_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+  }
+}

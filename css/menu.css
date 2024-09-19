@@ -1,0 +1,101 @@
+/*******Menu*******/
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /**Fundet hjælp på ChatGPT!**/
+  display: flex;
+  justify-content: start;
+  align-items: space-between;
+  background-color: var(--tertiary);
+  /*box-shadow: 0 12px 28px 0 rgba(156, 5, 85, 0.241);*/
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.4rem;
+  gap: 1px;
+  overflow-x: auto;
+}
+
+.menu a {
+  display: block;
+
+  text-decoration: none;
+  color: var(--quinary);
+  transition: color 0.3s;
+}
+.menu a:hover {
+  color: var(--primary);
+}
+
+/**Burger menu**/
+.burger {
+  width: 35px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 3px;
+  background-color: var(--quinary);
+  margin-bottom: 8px;
+  transition: 0.2s linear;
+}
+.burger:hover {
+  color: var(--primary);
+}
+.burger {
+  display: none;
+}
+
+/**Burger menu mobile**/
+@media screen and (max-width: 800px) {
+  .mainNav {
+    height: 90px;
+  }
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+    margin: 2rem;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(10px, -10px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: var(--tertiary);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 16px;
+  }
+}

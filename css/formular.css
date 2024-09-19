@@ -1,0 +1,79 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/**Styling af formular**/
+
+h1,
+h2,
+h3,
+p,
+a {
+  margin: 2rem;
+}
+
+input,
+label {
+  margin-left: 1.5rem;
+}
+
+label {
+  font-family: var(--fontfamilyp);
+  font-size: 9pt;
+}
+body {
+  background-color: var(--quaternary);
+}
+
+h1 {
+  padding-bottom: 1rem;
+}
+p {
+  padding-bottom: 0.5rem;
+}
+input,
+textarea {
+  width: 80%;
+}
+button {
+  margin: 2rem;
+  padding: 0.3rem;
+  width: 50%;
+}
+label,
+input,
+textarea,
+select,
+button {
+  display: block;
+}
+form {
+  display: grid;
+}
+.form-felt {
+  display: grid;
+  padding: 0.5rem;
+}
+/**Cursor styling**/
+button,
+select {
+  cursor: pointer;
+}
+
+.tak {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  text-align: center;
+}
+@media (min-width: 800px) {
+  input,
+  textarea {
+    width: 50%;
+  }
+  button {
+    width: 25%;
+  }
+}

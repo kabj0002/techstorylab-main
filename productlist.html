@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products By Brand</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="general.css"/>
+</head>
+<body class="productlist">
+  <header class="mainNav">
+    <a href="index.html">
+      <h1>K<span>E</span>A</h1>
+    </a>
+  </header>
+  <main>
+    <div class="grid-header">
+      <img src="./img/android-chrome-192x192.png" alt="Logo" width="50px" height="50px">
+      <h1 class="TS-Header">Tech & Story Lab</h1>
+    </div>
+    <section id="categorylist">
+      <h1 class="category-head">KATEGORIER</h1>
+      <template id="category-template"><li class="category-item"><a href="productlist.html">Accessories</a></li></template>
+      <ol class="flex-container"></ol>
+    </section>
+    <div class="pil-wrapper">
+      <a href="product.html"><img class="pil" src="./img/right-arrow.png" alt="backspace pil" width="60"></a>
+    </div>
+    <h1 class="categoryHeader">Audio/Photo/Video Equipment</h1>
+    <div class="wrap-mainText">
+      <h2 class="mainText">Her finder du alt lige fra forskellige kameraer, objektiver og stabilisatorer til diverse tripods, mikrofoner og lysudstyr.  Hvad enten du er på udkig efter grej til fx portræt- og produktbilleder, interviews eller podcasts, har vi alt, du har brug for.</h2>
+    </div>
+    <h2 class="subHeader">Products</h2>
+    <section id="productListSection"></section>
+<template id="second">
+  <article class="smallProduct">
+    <a href="product.html" class="Linked">
+      <p class="topHead">Bing Bong</p>
+      <img src="./img/tripod.webp" alt="hej"/>
+      <p class="subtle"><span class="type">Tshirts </span> | <span class="brand">Nike</span></p>
+      <a class="read-more" href="product.html">Her kan du læse en beskrivelse af hvert produkt, så du kan få et indblik i om du er interreseret i at låne udstyret.</a>
+    </a>
+    </article>
+</template>
+<footer>
+  <div>
+    <h3>KEA - Københavns Erhvervsakademi</h3>
+    <p>Guldbergsgade 29N<br />2200 København N</p>
+    <h3>Du skal ikke bare vide.<br />Du skal kunne.</h3>
+
+    <div class="social_media">
+      <a href="https://www.facebook.com/KEAstudentlife/"
+        ><img src="img/facebook.svg" alt="facebook"
+      /></a>
+      <a
+        href="https://www.linkedin.com/school/kea-k-benhavns-erhvervsakademi/posts/?feedView=all"
+        ><img src="img/linkedin.svg" alt="linkedin"
+      /></a>
+      <a href="https://www.instagram.com/keacph/"
+        ><img src="img/instagram.svg" alt="instagram"
+      /></a>
+      <a href="https://x.com/keacph"
+        ><img src="img/twitter.svg" alt="twitter"
+      /></a>
+      <a href="https://www.youtube.com/user/KEAkanal"
+        ><img src="img/youtube.svg" alt="youtube"
+      /></a>
+    </div>
+  </div>
+  <div>
+    <h3>Vejledning</h3>
+    <a href="">Studieadministrationen</a>
+    <a href="">Studie- og Karrierevejledning</a>
+    <a href="">SPS (specialpædagogisk støtte)</a>
+    <a href="">SU-vejledning</a>
+    <a href="">Praktik</a>
+  </div>
+  <div>
+    <h3>Relevante links</h3>
+    <a href="">KEA Webmail</a>
+    <a href="">KEA Bibliotek</a>
+    <a href="">Itslearning</a>
+    <a href="">Fag- og modulkatalog</a>
+    <a href="">Studieaktivitetsmodul</a>
+    <a href="">PARIS-aftalen</a>
+    <a href="">Ordensregler</a>
+  </div>
+  <div>
+    <h3>Praktisk info</h3>
+    <a href="">Cookies og privatliv</a>
+    <a href="">Persondatapolitik</a>
+    <a href="">Tilgængelighedsærklæring</a>
+    <a href="">Find vej på KEA</a>
+  </div>
+</footer>
+  </main>
+  <script src="productlist.js"></script>
+</body>
+
+</html>

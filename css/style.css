@@ -1,0 +1,442 @@
+body {
+    background-color: #EDEDED;
+}
+
+/* Alt tekst til produktliste */
+
+@media (min-width: 800px) {
+
+.TS-Header {
+    font-weight: lighter;
+    font-size: 50px;
+}
+
+.grid-header {
+    width: 90%;
+    position: relative;
+    margin: 0 auto 3%;
+    display: flex;
+    align-items: center;
+}
+
+.grid-header h1 {
+margin-left: 1%;
+}
+
+.categoryHeader {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 2%;
+    font-weight: 100;
+}
+
+.wrap-mainText {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    color: black;
+}
+
+.mainText {
+    font-weight: 1;
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.subHeader {
+    text-align: center;
+    margin-top: 7%;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.pil-wrapper {
+    width: 90%;
+    position: relative;
+    margin: 3% auto 2%;
+}
+
+.pil {
+    transform: rotate(180deg);
+}
+
+/* Knapper til productlist */
+
+.category-head {
+    float: left;
+    text-decoration: none;
+    color: #233249;
+    padding: 10px;
+    font-size: 20pt;
+    font-weight: 100;
+    transform: translate(0%, -50%);
+}
+
+#categorylist {
+    text-align: right;
+    position: relative;
+    width: 90%;
+    margin: 0% auto;
+}
+
+#categorylist li {
+    display: inline-flex;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #233249;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+#categorylist li a{
+    text-decoration: none;
+    text-align: center;
+    color: #233249;
+    font-weight: 500;
+}
+
+#categorylist li:hover {
+    background-color: #233249;
+    color: #ddd;
+}
+#categorylist li a:hover {
+    color: #ddd;
+}
+
+/* Produktliste kort*/
+#productListSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.smallProduct {
+    background-color: #D9D9D9;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.smallProduct a{
+      text-decoration: none;
+      color: #233249;
+  }
+  
+  .smallProduct img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .topHead {
+    font-size: larger;
+    font-weight: bolder;
+  }
+
+.subtle {
+    font-size: larger;
+    font-weight: bolder;
+}
+}
+
+
+@media (min-width: 450px) and (max-width: 799px) {
+
+.TS-Header {
+    font-weight: lighter;
+    font-size: 50px;
+}
+
+.grid-header {
+    width: 90%;
+    position: relative;
+    margin: 0 auto 3%;
+    display: flex;
+    align-items: center;
+}
+
+.grid-header h1 {
+margin-left: 1%;
+}
+
+.categoryHeader {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2%;
+    font-weight: 100;
+}
+
+.wrap-mainText {
+    position: relative;
+    width: 100%;
+    color: black;
+}
+
+.mainText {
+    font-weight: 1;
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 10% auto;
+}
+
+.subHeader {
+    text-align: center;
+    margin-top: 7%;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.pil-wrapper {
+    width: 100%;
+    position: relative;
+    margin: 10% auto 4%;
+    text-align: center;
+}
+
+.pil {
+    transform: rotate(180deg);
+}
+
+/* Knapper til productlist */
+
+.category-head {
+    float: left;
+    text-decoration: none;
+    color: #233249;
+    padding: 10px;
+    font-size: 20pt;
+    font-weight: 100;
+    transform: translate(0%, -50%);
+}
+
+#categorylist {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin: 0% auto;
+}
+
+#categorylist li {
+    display: inline-flex;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #233249;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#categorylist li a{
+    text-decoration: none;
+    text-align: center;
+    color: #233249;
+    font-weight: 500;
+}
+
+#categorylist li:hover {
+    background-color: #233249;
+    color: #ddd;
+}
+#categorylist li a:hover {
+    color: #ddd;
+}
+
+/* Produktliste kort*/
+#productListSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.smallProduct {
+    background-color: #D9D9D9;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.smallProduct a{
+      text-decoration: none;
+      color: #233249;
+  }
+  
+  .smallProduct img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .topHead {
+    font-size: larger;
+    font-weight: bolder;
+  }
+
+.subtle {
+    font-size: larger;
+    font-weight: bolder;
+}
+}
+
+@media (max-width: 450px) {
+    .TS-Header {
+        font-weight: lighter;
+        font-size: 50px;
+    }
+    
+    .grid-header {
+        width: 100%;
+        position: relative;
+        margin: 0 auto 3%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .grid-header h1 {
+    margin-left: 1%;
+    }
+    
+    .categoryHeader {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+        margin-bottom: 2%;
+        font-weight: 100;
+        text-align: center;
+    }
+    
+    .wrap-mainText {
+        position: relative;
+        width: 100%;
+        color: black;
+    }
+    
+    .mainText {
+        font-weight: 1;
+        width: 60%;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin: 10% auto;
+    }
+    
+    .subHeader {
+        text-align: center;
+        margin-top: 7%;
+        font-size: 30px;
+        font-weight: 100;
+    }
+    
+    .pil-wrapper {
+        width: 100%;
+        position: relative;
+        margin: 10% auto 4%;
+        text-align: center;
+    }
+    
+    .pil {
+        transform: rotate(180deg);
+    }
+    
+    /* Knapper til productlist */
+    
+    .category-head {
+        float: left;
+        text-decoration: none;
+        color: #233249;
+        padding: 10px;
+        font-size: 20pt;
+        font-weight: 100;
+        transform: translate(0%, -50%);
+    }
+    
+    #categorylist {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        margin: 0% auto;
+    }
+    
+    #categorylist li {
+        display: inline-flex;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #233249;
+        border-radius: 0.2rem;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    #categorylist li a{
+        text-decoration: none;
+        text-align: center;
+        color: #233249;
+        font-weight: 500;
+    }
+    
+    #categorylist li:hover {
+        background-color: #233249;
+        color: #ddd;
+    }
+    #categorylist li a:hover {
+        color: #ddd;
+    }
+    
+    /* Produktliste kort*/
+    #productListSection {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        padding: 20px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .smallProduct {
+        background-color: #D9D9D9;
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+    
+    .smallProduct a{
+          text-decoration: none;
+          color: #233249;
+      }
+      
+      .smallProduct img {
+        max-width: 100%;
+        height: auto;
+      }
+    
+      .topHead {
+        font-size: larger;
+        font-weight: bolder;
+      }
+    
+    .subtle {
+        font-size: larger;
+        font-weight: bolder;
+    }
+}

@@ -1,0 +1,137 @@
+/**Fonts fundet på https://www.onlinewebfonts.com/**/
+@font-face {
+  font-family: "Helvetica Neue LT Std 77 Bold Condensed";
+  src: url("https://db.onlinewebfonts.com/t/4c29fcc86f895611c127f96e745d6dd4.eot");
+  src: url("https://db.onlinewebfonts.com/t/4c29fcc86f895611c127f96e745d6dd4.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/4c29fcc86f895611c127f96e745d6dd4.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/4c29fcc86f895611c127f96e745d6dd4.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/4c29fcc86f895611c127f96e745d6dd4.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/4c29fcc86f895611c127f96e745d6dd4.svg#Helvetica Neue LT Std 77 Bold Condensed")
+      format("svg");
+}
+
+@font-face {
+  font-family: "Helvetica Neue LT Std 55 Roman";
+  src: url("https://db.onlinewebfonts.com/t/f0db0faa0f4af4630e2db0cd30400f2c.eot");
+  src: url("https://db.onlinewebfonts.com/t/f0db0faa0f4af4630e2db0cd30400f2c.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/f0db0faa0f4af4630e2db0cd30400f2c.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/f0db0faa0f4af4630e2db0cd30400f2c.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/f0db0faa0f4af4630e2db0cd30400f2c.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/f0db0faa0f4af4630e2db0cd30400f2c.svg#Helvetica Neue LT Std 55 Roman")
+      format("svg");
+}
+
+/**Variabler**/
+html {
+  --primary: #da87a8;
+  --secondary: #ea5045;
+  --tertiary: #233249;
+  --quaternary: #dfe0e4;
+  --quinary: #ffffff;
+  --senary: #d9d9d9; /**OBS denne farve skal ændres**/
+
+  --fontfamilyheader: "Helvetica Neue LT Std 77 Bold Condensed";
+  --fontfamilyp: "Helvetica Neue LT Std 55 Roman";
+}
+
+h1 {
+  /**Main header**/
+  font-family: var(--fontfamilyheader);
+  font-size: 30pt;
+  color: var(--tertiary);
+}
+h2 {
+  /**Subheader**/
+  font-family: var(--fontfamilyheader);
+  font-size: 14pt;
+  color: var(--tertiary);
+}
+h3 {
+  /**Header i footer**/
+  font-family: var(--fontfamilyheader);
+  font-size: 10pt;
+  color: var(--quinary);
+}
+p {
+  font-family: var(--fontfamilyp);
+  font-size: 9pt;
+  max-width: 65ch;
+}
+a {
+  font-family: var(--fontfamilyp);
+}
+
+main {
+  background-color: var(--quaternary);
+  color: var(--tertiary);
+}
+
+/**Styling af footer**/
+footer {
+  background-color: var(--tertiary);
+  color: var(--quinary);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+footer div a {
+  font-size: 9pt;
+
+  display: flex;
+  flex-direction: column;
+}
+footer a {
+  color: var(--quinary);
+  margin: 0.5rem;
+}
+footer h3 {
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+}
+footer p {
+  margin-left: 0.5rem;
+}
+footer img {
+  margin-left: 2rem;
+}
+footer div {
+  margin-bottom: 2rem;
+}
+footer a:hover {
+  color: var(--primary);
+}
+
+.social_media {
+  display: flex;
+  justify-content: left;
+}
+.social_media img {
+  width: 1.5rem;
+}
+
+@media (min-width: 800px) {
+  /**Styling af footer desktop**/
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+  footer img {
+    margin-left: 0.2rem;
+    margin: 0.3rem;
+  }
+}
+
+/**Fjerne streg under link**/
+a {
+  text-decoration: none;
+}
